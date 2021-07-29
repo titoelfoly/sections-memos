@@ -1,0 +1,1 @@
+deploy": "react-scripts build && aws s3 rm s3://url-shorter-frontend/ --recursive && aws s3 sync ./build s3://url-shorter-frontend/ --acl public-read" 

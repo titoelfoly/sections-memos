@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://titoelfoly:tito4631041@portofolio.dspnr.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret": "MukhtarEfoly"
+}
