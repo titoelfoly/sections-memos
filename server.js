@@ -1,5 +1,6 @@
 const express = require("express");
 const connectDB = require("./config/db");
+var cors = require("cors");
 const app = express();
 
 // connecting to The Db
@@ -7,6 +8,7 @@ connectDB();
 
 // Initializing Middleware
 app.use(express.json({ extended: false }));
+app.use(cors());
 
 app.get("/", (req, res) => res.json({ msg: "welcome To TODO App" }));
 
